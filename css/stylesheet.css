@@ -1,0 +1,189 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+		-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	}
+
+li {
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 15px;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	padding: 40px 20px;
+	display: table;
+	border-spacing: 15px 0;
+	z-index: 100;
+}
+
+.top-link {
+	display: table-cell;
+	vertical-align: middle;
+	height: 57px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid #bc9942;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .2s;
+
+}
+
+.top-link:hover {
+	background-color: #bc9942;
+	color: #000;
+	transition: .2s;
+	text-decoration: none;
+}
+
+.links-holder {
+	float: right;
+}
+
+.nav-links {
+	margin: 0;
+	padding: 0;
+	display: table-row;
+}
+
+.logo {
+	width: 175px;
+	margin-left: 15px;
+}
+
+.home {
+	float: left;
+}
+
+.wid {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: -9999;
+}
+
+.featured {
+	background-color: #bc9942;
+	overflow: hidden;
+
+}
+
+.jumbo {
+	background: url("../images/cereal_move.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.jumbo-container {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: table;
+}
+
+.jumbo-text {
+	color: #fff;
+	font-size: 160px;
+	line-height: 150px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#triangle-up {
+	max-width: 100%;
+	height: 0;
+	border-bottom: 120px solid #bc9942;
+	margin-top: -120px;
+	overflow: hidden;
+}
+
+.hide-text {
+	display: none;
+}
+
+
+
+
+
+.blurry {
+	color: transparent;
+	animation: blur 15s ease-out infinite;
+	-webkit-animation: blur 15s ease-out infinite;
+}
+
+.blurryd {
+	color: transparent;
+	animation: blur 15s ease-out infinite;
+	-webkit-animation: blurr 15s ease-out infinite;
+}
+
+.blurry:nth-child(1), .blurryd:nth-child(1) {
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+.blurry:nth-child(2), .blurryd:nth-child(2) {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+.blurry:nth-child(3), .blurryd:nth-child(3) {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+.blurry:nth-child(4), .blurryd:nth-child(4) {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+.blurry:nth-child(5), .blurryd:nth-child(5) {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+
+
+@keyframes blur {
+	0% 		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: 0;}
+	2%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: 0;}
+	4%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: 0;}
+	6%		{text-shadow:  0 0 90px #fff; margin-left: 0;}
+	8%		{opacity: 1; margin-left: 0;}
+	10%		{text-shadow:  0 0 0px #fff; margin-left: 0;}
+	42%		{text-shadow:  0 0 0px #fff; margin-left: 0;}
+	44%		{opacity: 1; margin-left: 0;}
+	46%		{text-shadow:  0 0 90px #fff; opacity: 0; margin-left: 0;}
+	48%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: 0;}
+	50%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: -500px;}
+	100%	{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-left: -500px;}
+}
+
+
+
+@keyframes blurr {
+	0% 		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
+	50%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
+	52%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none; margin-right: 0;}
+	54%		{text-shadow:  0 0 90px #bc9942; margin-right: 0; opacity: 0;}
+	56%		{opacity: 1; margin-right: 0;}
+	58%		{text-shadow:  0 0 0px #bc9942; margin-right: 0;}
+	90%		{text-shadow:  0 0 0px #bc9942; margin-right: 0;}
+	92%		{opacity: 1; margin-right: 0;}
+	94%		{text-shadow:  0 0 90px #bc9942; margin-right: 0; opacity: 0;}
+	96%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none; margin-right: 0;}
+	98%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
+	100%	{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
+}
+
+
