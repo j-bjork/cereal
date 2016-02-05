@@ -5,11 +5,25 @@ html, body {
 	font-size: 100%;
 		-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box;}
+
+a:link {
+	text-decoration: none;
 }
 
-a {
-	}
+a:visited {
+	text-decoration: none;
+	color: #212121;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active{
+	text-decoration: none;
+	color: #212121;
+}
 
 li {
 	display: inline-block;
@@ -17,33 +31,42 @@ li {
 	margin: 0 15px;
 }
 
+
+  .style-1 {
+  border-style: solid;
+  border-color: #bc9942 transparent;
+  }
+
+ 
+
 .nav {
 	position: fixed;
 	width: 100%;
-	padding: 40px 20px;
+	padding: 20px 20px;
 	display: table;
 	border-spacing: 15px 0;
 	z-index: 100;
+	background-color: rgba(255,255,255,1)
 }
 
 .top-link {
 	display: table-cell;
 	vertical-align: middle;
-	height: 57px;
+	/*height: 57px;*/
 	width: 100px;
+	padding: 10px 0;
 	text-align: center;
-	border: 2px solid #bc9942;
-	color: #fff;
-	font-weight: 700;
-	font-size: 16px;
+	border: 2px solid #212121;
+	color: #000;
+	font-size: 1.2em;
 	cursor: pointer;
 	transition: .2s;
 
 }
 
 .top-link:hover {
-	background-color: #bc9942;
-	color: #000;
+	background-color: #212121;
+	color: white;
 	transition: .2s;
 	text-decoration: none;
 }
@@ -68,16 +91,29 @@ li {
 }
 
 .wid {
-	min-height: 100%;
+	min-height: 50%;
 	width: 100%;
 	overflow: hidden;
 	z-index: -9999;
 }
 
+.first {
+	padding-top: 91px;
+}
+
+.high {
+	width: 100%;
+	overflow: hidden;
+}
+
 .featured {
-	background-color: #bc9942;
+	background-color: #212121;
 	overflow: hidden;
 
+}
+
+.second-one {
+	background: url("../images/cereal_pattern.png") repeat center center fixed;
 }
 
 .jumbo {
@@ -88,16 +124,44 @@ li {
   	background-size: cover;
 }
 
+.none {
+	opacity: 0;
+	transition: opacity 0.15s;
+}
+
+.some {
+	opacity: 1;
+	transition: opacity 0.15s;
+}
+
 .jumbo-container {
 	width: 100%;
 	height: 100vh;
 	text-align: center;
 	display: table;
+	position: fixed;
+}
+
+.plaz {
+	height: 40vh;
+	width: 50%;
+}
+
+.plaza {
+	display: table;
+	height: 40vh;
+	text-align: center;
+	width: 50%;
+}
+
+.plazaa {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .jumbo-text {
 	color: #fff;
-	font-size: 160px;
+	font-size: 100px;
 	line-height: 150px;
 	display: table-cell;
 	vertical-align: middle;
@@ -172,18 +236,37 @@ li {
 
 
 @keyframes blurr {
-	0% 		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
-	50%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
-	52%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none; margin-right: 0;}
-	54%		{text-shadow:  0 0 90px #bc9942; margin-right: 0; opacity: 0;}
+	0% 		{text-shadow:  0 0 100px #fff; opacity:0; display: none;  margin-right: -500px;}
+	50%		{text-shadow:  0 0 100px #fff; opacity:0; display: none;  margin-right: -500px;}
+	52%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-right: 0;}
+	54%		{text-shadow:  0 0 90px #fff; margin-right: 0; opacity: 0;}
 	56%		{opacity: 1; margin-right: 0;}
-	58%		{text-shadow:  0 0 0px #bc9942; margin-right: 0;}
-	90%		{text-shadow:  0 0 0px #bc9942; margin-right: 0;}
+	58%		{text-shadow:  0 0 0px #fff; margin-right: 0;}
+	90%		{text-shadow:  0 0 0px #fff; margin-right: 0;}
 	92%		{opacity: 1; margin-right: 0;}
-	94%		{text-shadow:  0 0 90px #bc9942; margin-right: 0; opacity: 0;}
-	96%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none; margin-right: 0;}
-	98%		{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
-	100%	{text-shadow:  0 0 100px #bc9942; opacity:0; display: none;  margin-right: -500px;}
+	94%		{text-shadow:  0 0 90px #fff; margin-right: 0; opacity: 0;}
+	96%		{text-shadow:  0 0 100px #fff; opacity:0; display: none; margin-right: 0;}
+	98%		{text-shadow:  0 0 100px #fff; opacity:0; display: none;  margin-right: -500px;}
+	100%	{text-shadow:  0 0 100px #fff; opacity:0; display: none;  margin-right: -500px;}
 }
 
 
+
+
+
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(359deg); }
+  }
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(359deg); }
+  }
+
+@-o-keyframes spin {
+  100% { -moz-transform: rotate(359deg); }
+  }
+
+@keyframes spin {
+  100% {  transform: rotate(359deg); }
+  }
